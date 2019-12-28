@@ -22,17 +22,7 @@ def literal_aoh
 end
 
 def aoh_lookup(aoh, row, key)
-  row_index = 0 
-  while row_index < aoh.count do 
-    if row_index == row 
-      element_index = 0
-      if element_index == key
-        return aoh[row_index][element_index]
-      else element_index += 1 
-      end
-    else row_index += 1 
-    end
-  end
+ aoh[row][key]
 end
 
 def aoh_update(aoh, row, key, new_value)
