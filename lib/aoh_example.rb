@@ -27,7 +27,7 @@ def aoh_lookup(aoh, row, key)
     if row_index == row 
       element_index = 0
       if element_index == key
-        return aoh[row_index][:element_index]
+        return aoh[row_index][element_index]
       else element_index += 1 
       end
     else row_index += 1 
